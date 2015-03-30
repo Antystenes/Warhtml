@@ -22,8 +22,8 @@ class HTML:
         self.f.write("<h"+str(headings)+">"+text+"</h"+headings+">")
         heading += 1
         
-    def begintable(self, border = 1, width = 100, bgcolor = 'white'):
-        self.f.write('<table border="'+str(border)+'" style="width:'+str(width)+'%" bgcolor="#'+bgcolor+'">')
+    def begintable(self, style = ' '):
+        self.f.write('<table '+style+'>')
 
     def endtable(self):
         self.f.write("</table>")
@@ -32,16 +32,16 @@ class HTML:
         self.f.write(text+"<br>")
         
     def write(self, text):
-        self.f.write(text+"<br>")
+        self.f.write(text)
         
-    def rowbegin(self):
-        self.f.write("<tr>")
+    def rowbegin(self, style = ' '):
+        self.f.write("<tr "+style+">")
         
     def rowend(self):
         self.f.write("</tr>")
 
-    def colbegin(self):
-        self.f.write("<td>")
+    def colbegin(self, style = ' '):
+        self.f.write("<td "+style+">")
 
     def colend(self):
         self.f.write("</td>")
