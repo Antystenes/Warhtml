@@ -1,0 +1,23 @@
+.name {
+    color : green;
+    text-align : right;
+    font-family: Arial, Arial, sans;
+    font-style : italic;
+}
+
+.data{
+    color : blue;
+    text-align : center;
+    font-family : "Times New Roman", Times, serif;
+}
+
+
+table {
+    background-color:magenta;
+    width:25%;
+    border : 3px solid black;
+}
+
+td {
+    border : 1px solid black;
+}
